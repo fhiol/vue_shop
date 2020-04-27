@@ -5,6 +5,7 @@ import './plugins/element.js'
 import './assets/css/global.css'
 // 导入全局字体图标
 import './assets/fonts/iconfont.css'
+import TreeTable from 'vue-table-with-tree-grid'
 
 import axios from "axios";
 import { MessageBox } from 'element-ui'
@@ -21,6 +22,8 @@ Vue.prototype.$http = axios
 Vue.prototype.$confirmhttp = MessageBox.confirm
 
 Vue.config.productionTip = false
+
+Vue.component('tree-table', TreeTable)
 
 new Vue({
   router,
